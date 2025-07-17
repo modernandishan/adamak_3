@@ -9,10 +9,12 @@
         "php": "^8.2",
         "bezhansalleh/filament-shield": "^3.3",
         "filament/filament": "^3.3",
+        "ippanel/php-rest-sdk": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "livewire/livewire": "^3.6",
-        "marcogermani87/filament-captcha": "^1.5"
+        "marcogermani87/filament-captcha": "^1.5",
+        "mokhosh/filament-jalali": "^4.10"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
