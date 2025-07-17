@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Filament\Pages;
+namespace App\Filament\Admin\Pages;
 
 use Filament\Pages\Page;
 
@@ -8,5 +8,5 @@ class EditProfile extends Page
 {
     protected static ?string $navigationIcon = 'heroicon-o-document-text';
 
-    protected static string $view = 'filament.pages.edit-profile';
+    protected static string $view = 'filament.admin.pages.edit-profile';
 }

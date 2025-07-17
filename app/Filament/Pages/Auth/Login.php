@@ -13,11 +13,23 @@ class Login extends BaseAuth
     {
         return $form
             ->schema([
-                $this->getEmailFormComponent(),
-                $this->getLoginFormComponent(),
+                //$this->getEmailFormComponent(),
+                $this->getMobileFormComponent(),
                 $this->getPasswordFormComponent(),
                 $this->getRememberFormComponent(),
             ])
             ->statePath('data');
+    }
+
+    protected function getMobileFormComponent(): Component
+    {
+        return TextInput::make('mobile')
+            ->label('موبایل')
+            ->required()
+            ->regex('/^09[0-9]{9}$/')
+            ->validationMessages([
+                'regex' => 'فرمت شماره موبایل صحیح نمی‌باشد.',
+            ])
+            ->tel();
     }
 }
